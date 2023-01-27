@@ -4,13 +4,18 @@
     box-sizing: border-box
 }
  
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .content_header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    max-width: 1440px;
+    width: 1440px;
     justify-content: space-between;
 }
 
@@ -124,6 +129,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .carte_produit {
@@ -214,10 +221,13 @@ li {
 /****************footer*******************/
 .footer {
     margin-top: 40px;
+    width: 100%;
 }
 
 .transition_champ{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .transition_champ img {
