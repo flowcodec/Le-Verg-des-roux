@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*{
+    box-sizing: border-box
+}
+ 
+
+.content_header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-top: 40px;
+ }
+
+nav a :hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.contentLogo {
+    position: relative;
+
+}
+
+.contenth1 {
+    max-width: 1440px;
+    position: relative;
+    height: 200px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+/*********************banner*******************/
+
+.contener_Photo_Banner {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    padding-bottom: 50px;
+}
+
+.contener_Photo_Banner img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.texte_présentation{
+    max-width: 500px;
+}
+
+.texte_présentation p {
+    font-size: 30px;
+    margin: 0px 30px;
+}
+
+/***************présentation du verger*************/
+
+.présentation_verger {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1440px;
+}
+
+.présentation_verger img {
+    object-fit: cover;
+    width: 100%;
+    min-width: 500px;
+}
+
+.transition_champ{
+    max-width: 1440px;
+    display: flex;
+}
+
+
+.présentation_Noémie{
+    max-width: 1440px;
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.bloc_noémie{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.bloc_noémie img {
+    object-fit: cover ;
+    scale: 0.;
+}
+
+.présentation_Noémie p{
+    font-size: 40px;
+    text-align: center;
+}
+
+/********************gallery*******************/
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+}
+
+.carte_produit {
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.carte_produit1 {
+    padding: 10px;
+    margin: 20px 20px 20px 0px;
+    border: 1px solid black;
+}
+
+.carte_produit2 {
+    padding: 10px;
+    margin: 20px 0px 20px 20px;
+    border: 1px solid black;
+}
+
+.carte_produit img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/**********************liste***********************/
+.the_product {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1440px;
+}
+
+.the_product img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.block_liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0;
+    padding-right: 150px;
+}
+
+ul {
+    list-style-type : none;
+}
+
+li {
+    font-size: 25px;
+    padding-left: 200px;
+}
+
+/**************section commande******************/
+.section_commande {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+}
+
+.sentence_command {
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid black;
+}
+
+.adresse_mail {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;    
+    border-bottom: 1px solid black;
+}
+
+/****************footer*******************/
+.footer {
+    margin-top: 40px;
+}
+
+.transition_champ{
+    width: 100%;
+}
+
+.transition_champ img {
+    object-fit: cover;
+    position: absolute;
+}
+.thanks {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+    padding-top: 240px;
+    max-width: 1440px;
+}
