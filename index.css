@@ -10,19 +10,25 @@ body {
     align-items: center;
 }
 
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .content_header {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     width: 1440px;
-    justify-content: space-between;
+    width: 100%;
+    gap: 125px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 275px;
     align-items: center;
 }
 
@@ -43,7 +49,7 @@ nav a :hover {
 
 .contentLogo {
     position: relative;
-
+    margin-left: -20px;
 }
 
 .contenth1 {
@@ -55,6 +61,7 @@ nav a :hover {
 h1 {
     font-size: 90px;
 }
+
 
 /*********************banner*******************/
 
@@ -115,7 +122,6 @@ h1 {
 
 .bloc_noémie img {
     object-fit: cover ;
-    scale: 0.;
 }
 
 .présentation_Noémie p{
@@ -139,10 +145,20 @@ h1 {
     border: 1px solid black;
 }
 
+.carte_produit img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .carte_produit1 {
     padding: 10px;
     margin: 20px 20px 20px 0px;
     border: 1px solid black;
+}
+
+.carte_produit1 img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .carte_produit2 {
@@ -151,10 +167,11 @@ h1 {
     border: 1px solid black;
 }
 
-.carte_produit img{
+.carte_produit2 img{
     width: 100%;
     object-fit: cover;
 }
+
 
 /**********************liste***********************/
 .the_product {
@@ -207,6 +224,7 @@ li {
     margin-top: 60px;
     padding-top: 40px;
     border-top: 1px solid black;
+    text-align: center;
 }
 
 .adresse_mail {
@@ -241,4 +259,201 @@ li {
     text-align: center;
     padding-top: 240px;
     max-width: 1440px;
+    
+}
+
+@media screen and (max-width: 1470px){
+h1{
+    padding-top: 35px;
+ font-size: 60px;
+}
+
+.content_header {
+    gap: 100px;
+}
+.contenth1{
+    display: flex;
+    align-items: baseline;
+}
+}
+
+@media screen and (max-width: 1250px){
+
+h1{
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.content_header {
+    gap: 140px;
+}
+}
+
+@media screen and (max-width: 1150px){
+.content_header {
+    gap: 50px;
+}
+nav{
+    width: 150px;
+}
+
+h1{
+    padding-top: 25px;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 790px){
+.présentation_verger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texte_présentation{
+    padding-bottom: 40px;
+}
+
+.texte_présentation p {
+    text-align: center;
+}
+/*****présentation noémie*******/
+.présentation_Noémie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc_noémie{
+    width: 100%;
+}
+.bloc_noémie img {
+    width: 100%;
+}
+
+/***gallery**/
+.gallery{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.carte_produit {
+    width: 50%;
+}
+
+/****sectioncommande*****/
+
+.section_commande{
+ display: flex;
+}
+
+.section_commande article{
+    max-width: 80%;
+    height: auto;
+}
+
+.carte_produit1{ 
+    display: none;
+}
+
+.carte_produit2{ 
+    display: none;
+}
+
+.sentence_command{
+    font-size: 30px;
+    text-align: center;
+    height: max-content;
+    max-width: 60%;
+}
+
+.adresse_mail{
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.content_header {
+    flex-direction: column;
+    align-items: center;
+    gap:0px;
+}
+.contenth1{
+    height: fit-content;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav a {
+    padding: 0px;
+    height: fit-content;
+}
+}
+@media screen and (max-width: 400px) {
+.texte_présentation {
+    width: 330px;
+}
+
+.texte_présentation p{
+    font-size: 25px;
+}
+.content_photo_présentation{
+    display: flex;
+    justify-content: center;
+    max-width: 330px;
+}
+
+.présentation_Noémie {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.bloc_noémie{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}
+.bloc_noémie img{
+    width: 100%;
+}
+.présentation_Noémie p {
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.the_product{
+    flex-direction: column;
+
+}
+h2{
+    padding: 20px 0px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    padding: 0;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sentence_command{
+    max-width: 90%;
+}
+.adresse_mail {
+    font-size: 25px;
+} 
 }
