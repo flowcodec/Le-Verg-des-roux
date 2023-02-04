@@ -216,7 +216,7 @@ li {
     max-width: 1440px;
 }
 
-.sentence_command {
+#sentence_command {
     margin: 0px;
     padding: 0px;
     font-size: 40px;
@@ -227,13 +227,19 @@ li {
     text-align: center;
 }
 
-.adresse_mail {
+#adresse_mail {
     margin: 0px;
     padding: 0px;
     font-size: 50px;
     padding-bottom: 40px;
     margin-bottom: 20px;    
     border-bottom: 1px solid black;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /****************footer*******************/
@@ -298,18 +304,40 @@ nav{
 }
 
 h1{
-    padding-top: 25px;
+    padding-top: 45px;
     text-align: center;
 }
 
 }
 
-@media screen and (max-width: 790px){
+@media screen and (max-width: 1000px){
 .présentation_verger{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.texte_présentation {
+    max-width: 900px ;
+    text-align: center;
+}
+.content_photo_présentation{
+    max-width: 1000px;
+    padding-top: 40px;
+}
+.content_photo_présentation{
+    object-fit: cover;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 835px){
+h1{
+    padding-top: 25px;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 790px){
 
 .texte_présentation{
     padding-bottom: 40px;
@@ -343,8 +371,27 @@ h1{
     width: 50%;
 }
 
-/****sectioncommande*****/
 
+.the_product{
+    flex-direction: column;
+}
+h2{
+    padding: 20px 0px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    padding: 0;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/****sectioncommande*****/
 .section_commande{
  display: flex;
 }
@@ -362,14 +409,14 @@ h1{
     display: none;
 }
 
-.sentence_command{
+#sentence_command{
     font-size: 30px;
     text-align: center;
     height: max-content;
-    max-width: 60%;
+    max-width: 80%;
 }
 
-.adresse_mail{
+#adresse_mail{
     font-size: 30px;
 }
 }
@@ -398,6 +445,18 @@ nav a {
     height: fit-content;
 }
 }
+
+@media screen and (max-width: 450px){
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.carte_produit {
+    width:80%;
+}
+}
+
 @media screen and (max-width: 400px) {
 .texte_présentation {
     width: 330px;
@@ -431,29 +490,13 @@ nav a {
     padding-top: 140px;
     padding-bottom: 140px;
 }
-.the_product{
-    flex-direction: column;
 
-}
-h2{
-    padding: 20px 0px;
-}
-ul{
-    padding: 0px;
-    margin: 0px;
-}
-li{
-    padding: 0;
-}
-.link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.sentence_command{
+#sentence_command{
     max-width: 90%;
 }
-.adresse_mail {
+
+#adresse_mail {
     font-size: 25px;
 } 
 }
+
