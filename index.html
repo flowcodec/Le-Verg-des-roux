@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<!-- HEADER -->
     <header>
         <div class=" content_header">
             <div class="contentLogo">
@@ -35,11 +35,16 @@
     </header>
 
     <main>
-        <section>
+
+        <section class="Présentation">
             <div class="contener_Photo_Banner">
                 <img class="photobanner" src="./webp/produits_Montagne_paysage_resized.webp" alt="ensemble des produit proposées">
             </div>
-            <article class="présentation_verger">
+        </section>
+
+<!-- Présentation du verger -->
+        <section class="présentation_verger">
+            <article class="block_présentation_verger">
                 <div class="texte_présentation">
                     <p><strong>Productrice de petits fruits dans le Massif du Vercors</strong>, 
                     je cultive un verger tel que l’on pouvait en retrouver au sein de nos hameaux auparavant, 
@@ -51,65 +56,132 @@
                     <img src="./webp/Noémie_ceuillette_assise_resized.webp" alt="Noémie travaillant dans sont champ">
                 </div>
             </article>
-            <article class="présentation_Noémie">
-                <div class="bloc_noémie">
+        </section>
+
+<!-- Noémie -->
+        <section class="présentation_Noémie">
+            <article class="block_présentation_Noémie">
+                <div class="block_noémie">
                     <img src="./webp/Noémie_avec_panier_resized.webp" alt="Noémie Blanc">
                 </div>
-                <p class="nono">Noémie Blanc, Productrice &Transformatrice</p>
+                <p class="nono">Noémie Blanc, Productrice <br>&Transformatrice</p>
             </article>
         </section>
+        
+
+<!-- Gallerry -->
         <section class="gallery">
-            <div class="carte_produit1">
-                <img src="./webp/citron-1_resized.webp" alt="citron et fleur de sureau">
-            </div>
-            <div class="carte_produit">
-                <img src="./webp/deux_bolles_resized.webp" alt="2 bolles de framboise et baies">
-            </div>
-            <div class="carte_produit">
+            <div class="bloc_gallery">
+                <div class="carte_produit1">
+                    <img src="./webp/citron-1_resized.webp" alt="citron et fleur de sureau">
+                </div>
+                <div class="carte_produit">
+                    <img src="./webp/deux_bolles_resized.webp" alt="2 bolles de framboise et baies">
+                </div>
+                <div class="carte_produit">
                 <img src="./webp/table_bolle_2_resized.webp" alt="assotiment de fruit et préparation">
-            </div>
-            <div class="carte_produit2">
-                <img src="./webp/patte_de_fruit_plan_serré_resized.webp" alt="préparation pate de fruit">
+                </div>
+                <div class="carte_produit2">
+                    <img src="./webp/patte_de_fruit_plan_serré_resized.webp" alt="préparation pate de fruit">
+                </div>
             </div>
         </section>
+
+<!-- liste des produits -->
         <section class="the_product">
-            <div class="block_photo_producte">
-                <img class="photo_product" src="./webp/game_de_produit_intérieur_resized.webp" alt="assortiment des différents produits">
+            <article class="block_product">
+                <div class="block_photo_product">
+                    <img class="photo_product" src="./webp/game_de_produit_intérieur_resized.webp" alt="assortiment des différents produits">
+                </div>
+                <div class="block_liste">
+                    <h2>Mes produits:</h2>
+                    <ul>  
+                        <li>- Confitures</li>
+                        <li>- Compotes</li>    
+                        <li>- Coulis</li>    
+                        <li>- Pâte de fruit</li>    
+                        <li>- Sirops</li>    
+                        <li>- Vinaigres</li>    
+                        <li>- Sel à l’ail des ours</li>    
+                        <li>- Tartinade et tisanes</li>     
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+ <!-- partie commande & mail-->
+        <section class="section_commande">
+            <div class="block_commande">
+                <article class="link">
+                    <p id="sentence_command">Pour passer commande merci de m'envoyer un mail à cette adresse:</p>
+                    <a href="levergerdesroux38@gmail.com"><p id="adresse_mail">levergerdesroux38@gmail.com</p></a>
+                </article>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100064452443470"><img alt="logo facebook" src="./webp/facebook-logo-png.webp"></a>
             </div>
-            <div class="block_liste">
-                <h2>Mes produits:</h2>
-                <ul>  
-                    <li>- Confitures</li>
-                    <li>- Compotes</li>    
-                    <li>- Coulis</li>    
-                    <li>- Pâte de fruit</li>    
-                    <li>- Sirops</li>    
-                    <li>- Vinaigres</li>    
-                    <li>- Sel à l’ail des ours</li>    
-                    <li>- Tartinade et tisanes</li>     
+        </section>
+
+<!-- commentaires -->
+        <section class="Les_commantaires">
+            <article class="Com">
+                <h3>Déjà de nombreux clients satsfaits </h3>
+                <div class="block_les_commentaires">
+                    <div class="commentaire"><p>Vos pâtes de fruits sont une merveille ! Bravo<br><em class="nom_com">Martin</em></p></div>
+                    <div class="commentaire"><p>Plein de réussite au Verger des Roux. La confiture est juste délicieuse!<br><em class="nom_com">Petit Montchardon</em></p></div>
+                    <div class="commentaire"><p>Bravo pour ce subtil mélange Rhubarbe Cassis. Une très belle alchimie. Arrivé  sur ma table auprès de Angers au petit déjeuner. [...]<br><em class="nom_com">Olivier</em></p></div>
+                    <div class="commentaire"><p>Bonjour Noémie,
+                        On s'est rencontrées au Marché de Noël à Gières. 
+                        J'ai goûté à ta confiture Framboise et Rose 🤩
+                        Elle est vraiment sublime !
+                        Pour moi, l'équilibre entre les deux saveurs est parfait. 
+                        À l'ouverture du pot, il y a eu une "explosion" de senteurs. La rose qui est ma fleur préférée s'est propagée dans mes narines 🎊
+                        Quant à sa saveur elle est exquise. 
+                        Je t'en commanderai d'autres pour offrir et me régaler 😉
+                        Mille compliments tu as du talent.
+                        Bon dimanche
+                        À bientôt 😊
+                        <em class="nom_com">Celestina.</em></p></div>
+                </div>
+            </article>     
+        </section>
+
+<!-- sites partenaires -->
+        <section class="les_sites_partenaires">
+            <div class="block_les_sites_partenaires">
+                <h4 id="titre_partenaires">Sites partenaires</h4>
+                <ul class="liste_des_sites">
+                    <li><a href="https://fermes-du-vercors.com/"><p>Fermes du Vercors</p>
+                            <img src="./webp/logo-fermes-vercors-100.jpg" alt="logo fermes du vercors">
+                        </a>
+                    </li>
+                    <li><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiV5teBi8P9AhWyTKQEHRP2CN8QFnoECAsQAQ&url=https%3A%2F%2Fwww.facebook.com%2FSceadelaCote%2F%3Flocale%3Dfr_FR&usg=AOvVaw3Y51ELlwZBaIN9d7oOkzb6"><p>SCEA Ferme de la Côte</p>
+                            <img src="./webp/SCEA_Ferme_de_la_Côte.png" alt="logo ferme de la Côte" >
+                        </a>
+                    </li>
+                    <li><a href="https://www.google.fr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjM5Pr4i8P9AhUwUaQEHWkmAgMQFnoECBAQAQ&url=https%3A%2F%2Fzecamp.fr%2Ffr%2F&usg=AOvVaw2k50tl0Gt4Ydw-"><p>ZECAMP (Hôtel Restaurant)</p>
+                            <img src="./webp/zecamp.png" alt="logo zecamp" style="background-color: black; width:150px;">
+                        </a>
+                    </li>
+                    <li><a href="https://www.fleurdevignes.fr/"><p>Fleur de Vigne « Cave à manger »</p>
+                            <img src="./webp/fleur_de_vigne.webp" style="background-color: black; width:200px;">
+                        </a>
+                    </li>
+                    <li><a href="https://www.belleetoileski.fr/"><p>Belle étoile ski</p>
+                            <img src="./webp/belle_étoile_ski.png">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
-
-        <section class="section_commande">
-            <article class="link">
-                <p id="sentence_command">Pour passer commande merci de m'envoyer un mail à cette adresse:</p>
-                <a href="mailto:le.verger.des.roux@gmail.com"><p id="adresse_mail">le.verger.des.roux@gmail.com</p></a>
-            </article>
-
-            <a href="https://www.facebook.com/profile.php?id=100064452443470"><img src="./webp/facebook-logo-png.webp"></a>
-        </section>
-
     </main>
     
-    <footer>
-        <article class="footer">
-            <div class="transition_champ">
+<!-- footer -->
+    <footer class="partie_footer">
+        <section class="block_footer">
+            <div class="block_photo_footer">
                 <img class="champ" src="./webp/champ_resized.webp" alt="Ferme des Roux">
             </div> 
             <p class="thanks">Merci de votre visite et à bientôt!</p>
-
-        </article>
+        </section>
     </footer>
     
 </body>
