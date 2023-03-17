@@ -500,6 +500,11 @@ h3 {
         flex-direction: column;
         align-items: center;
     }
+
+    .block_product{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 790px) {
