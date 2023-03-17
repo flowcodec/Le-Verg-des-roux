@@ -422,9 +422,14 @@ h3 {
 }
 
 @media screen and (max-width: 1440px) {
+    header {
+        padding: 0px 20px;
+    }
+
     h1 {
         padding-top: 35px;
         font-size: 60px;
+        text-align: center;
     }
 
     .content_header {
@@ -442,6 +447,7 @@ h3 {
     main {
         padding: 20px;
     }
+
 
     h1 {
         padding-top: 50px;
@@ -702,17 +708,34 @@ h3 {
 }
 
 @media screen and (max-width: 450px) {
-
+    .texte_présentation p{
+        font-size: 20px;
+    }
 
     .gallery {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-
     }
 
+/******* présentation noémie**********/
     .carte_produit img {
         object-fit: contain;
+    }
+
+    .block_présentation_Noémie{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .block_noémie {
+        width: 100%;
+    }
+
+    .présentation_Noémie p {
+        width: 100%;
     }
 
     .thanks {
